@@ -30,4 +30,4 @@ impl State {
 }
 ```
 
-Rust will bark at us because the method attempts to re-borrow self exclusively while the surrounding context still holds a mutable reference to `self.state`.
+Rust will bark at us because the method attempts to re-borrow `self` exclusively while the surrounding context still holds a mutable reference to `self.state`.
